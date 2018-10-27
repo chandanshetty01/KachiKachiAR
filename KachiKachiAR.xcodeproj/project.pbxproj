@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CE2143A95296BD4A86D632E /* Pods_KachiKachiAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612A2A84EF6A7E11791CE3F8 /* Pods_KachiKachiAR.framework */; };
 		A32D64AD217CA66E009AF209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32D64AC217CA66E009AF209 /* AppDelegate.swift */; };
 		A32D64B1217CA66E009AF209 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32D64B0217CA66E009AF209 /* GameViewController.swift */; };
 		A32D64B4217CA66E009AF209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32D64B2217CA66E009AF209 /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CA9AF986BDD7ABBE7BE5AE6 /* Pods-KachiKachiAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KachiKachiAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KachiKachiAR/Pods-KachiKachiAR.debug.xcconfig"; sourceTree = "<group>"; };
+		612A2A84EF6A7E11791CE3F8 /* Pods_KachiKachiAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KachiKachiAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B2EBA22F6F7F0204ABC2B6 /* Pods-KachiKachiAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KachiKachiAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-KachiKachiAR/Pods-KachiKachiAR.release.xcconfig"; sourceTree = "<group>"; };
 		A32D64A9217CA66E009AF209 /* KachiKachiAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KachiKachiAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32D64AC217CA66E009AF209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A32D64B0217CA66E009AF209 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE2143A95296BD4A86D632E /* Pods_KachiKachiAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8669C6E697FCC6C750A2F713 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CA9AF986BDD7ABBE7BE5AE6 /* Pods-KachiKachiAR.debug.xcconfig */,
+				70B2EBA22F6F7F0204ABC2B6 /* Pods-KachiKachiAR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A32D64A0217CA66D009AF209 = {
 			isa = PBXGroup;
 			children = (
 				A32D64AB217CA66E009AF209 /* KachiKachiAR */,
 				A32D64C2217CA66F009AF209 /* KachiKachiARTests */,
 				A32D64AA217CA66E009AF209 /* Products */,
+				8669C6E697FCC6C750A2F713 /* Pods */,
+				F04813A91FF28D2D2B007539 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +112,14 @@
 			path = KachiKachiARTests;
 			sourceTree = "<group>";
 		};
+		F04813A91FF28D2D2B007539 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				612A2A84EF6A7E11791CE3F8 /* Pods_KachiKachiAR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A32D64C8217CA66F009AF209 /* Build configuration list for PBXNativeTarget "KachiKachiAR" */;
 			buildPhases = (
+				3D8F1C18634C57F07C03E17A /* [CP] Check Pods Manifest.lock */,
 				A32D64A5217CA66E009AF209 /* Sources */,
 				A32D64A6217CA66E009AF209 /* Frameworks */,
 				A32D64A7217CA66E009AF209 /* Resources */,
+				774FFB9B84B2EE29DDD0DBEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +217,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D8F1C18634C57F07C03E17A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KachiKachiAR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		774FFB9B84B2EE29DDD0DBEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KachiKachiAR/Pods-KachiKachiAR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KachiKachiAR/Pods-KachiKachiAR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A32D64A5217CA66E009AF209 /* Sources */ = {
@@ -358,6 +431,7 @@
 		};
 		A32D64C9217CA66F009AF209 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA9AF986BDD7ABBE7BE5AE6 /* Pods-KachiKachiAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +450,7 @@
 		};
 		A32D64CA217CA66F009AF209 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B2EBA22F6F7F0204ABC2B6 /* Pods-KachiKachiAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

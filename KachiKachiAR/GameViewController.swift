@@ -48,9 +48,11 @@ class GameViewController: UIViewController {
         rootScene.rootNode.addChildNode(ambientLightNode)
         
         //retreive the pencil
-        let pencil = pencilNode()
-        rootScene.rootNode.addChildNode(pencil)
-        pencil.position = SCNVector3(x: 0, y: 0, z: 0)
+        for _ in 0..<3 {
+            let pencil = pencilNode()
+            rootScene.rootNode.addChildNode(pencil)
+            pencil.position = SCNVector3(x: 0, y: 0, z: 0)
+        }
         
         // retrieve the SCNView
         let scnView = self.view as! SCNView
@@ -123,5 +125,4 @@ class GameViewController: UIViewController {
             return .all
         }
     }
-
 }

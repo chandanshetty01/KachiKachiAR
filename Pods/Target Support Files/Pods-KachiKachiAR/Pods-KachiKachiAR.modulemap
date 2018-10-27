@@ -1,0 +1,6 @@
+framework module Pods_KachiKachiAR {
+  umbrella header "Pods-KachiKachiAR-umbrella.h"
+
+  export *
+  module * { export * }
+}
